@@ -1,0 +1,49 @@
+/* p, 
+li, 
+h1, 
+h2 {
+    color: lightcoral;
+    font-family: 'Amatic SC'
+  } */
+
+  /* notes */
+  html {
+    font-size: 15px; /* px means "pixels": the base font size is now 10 pixels high */
+    font-family: "Playfair Display SC", sans-serif; /* this should be the rest of the output you got from Google Fonts */
+  }
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+  p,
+  li {
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+  html {
+    background-color: hwb(103 83% 6%);
+  }
+  body {
+    width: 600x;
+    margin: 10px 50px 20px;
+    background-color: rgb(247, 247, 247);
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+  }
+  h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #203412;
+    text-shadow: 5px 3px 1px white;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
