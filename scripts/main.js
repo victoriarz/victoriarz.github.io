@@ -12,7 +12,7 @@ myImage.onclick = () => {
     myImage.setAttribute("src", "images/lemon-tree.jpeg");
   }
 };
-let myButton = document.querySelector("button");
+let myButton = document.querySelector(".userid");
 let myHeading = document.querySelector("h1");
 
 function setUserName() {
@@ -35,3 +35,16 @@ function setUserName() {
     setUserName();
   };
   
+
+  /**
+   * 
+   * 
+   * 
+   * example on how to select the <li> and highlight, based on URL location
+   */
+
+  //  url = url = window.location.href;
+  //  if (url.includes('index.html')) {
+  //      link = document.querySelector('body > div > ul > li:nth-child(2) > a');
+  //      link.style.color = '#a5cdbb';
+  //  }
