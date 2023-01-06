@@ -12,6 +12,7 @@ body {
 }
 h1 {
   font-size: 2.6rem;
+  cursor: pointer;
 }
 li,
 button,
@@ -39,16 +40,16 @@ a {
   text-decoration: none;
 }
 button {
-  padding: 2rem 6rem;
+  padding: 2rem 2rem;
   background: rgb(241, 224, 227);
   border: none;
-  width: 22%;
   border-radius: 7px;
   color: black;
   font-size: 1.8rem;
   cursor: pointer;
   font-family: "Philosopher", sans-serif;
   transition: background 0.5s ease-in-out;
+  text-align: center;
 }
 
 button:hover {
@@ -60,6 +61,18 @@ button:hover {
   background-color: rgb(241, 224, 227);
   color: black;
 }
+
+.user-id {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  background: white;
+  color: black;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.5rem;
+  text-align: center;
+}
+
 nav {
   display: flex;
   width: 90%;
@@ -97,14 +110,25 @@ nav ul {
   text-align: center;
 }
 
-.hero h3 {
-  padding: 5rem;
+.hero p {
+  text-decoration: none;
+  padding: 1rem;
+  margin: 5rem;
+  text-align: center;
+  width: 40%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+  border-radius: 7px;
+}
+.hero a {
+  color: white;
+  font-style: italic;
 }
 
-.hero .change-user {
-  margin: 20px;
-  margin-top: 100px;
+.hero .button {
+  color: black;
+  font-style: normal;
 }
+
 /* Skills Section */
 
 #Skills {
@@ -129,34 +153,50 @@ nav ul {
 
 .Skills-head h2 {
   padding: 1rem 0rem;
-  text-decoration: none;
 }
 
 .Skills-head h3 {
   padding: 4rem 0rem;
 }
 
+.Skills-head ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.Skills-head li {
+  display: inline;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+  color: white;
+  border-radius: 7px;
+  margin-top: 2rem;
+}
+
 .cloud {
   position: absolute;
   top: 0%;
   right: 0%;
-  animation: cloudAnimation 3s infinite alternate ease-in-out;
 }
 
 .moving-cloud-1 {
   animation: cloudAnimation 3s infinite alternate ease-in-out;
+  z-index: 1;
 }
 
 .moving-cloud-2 {
   top: 20%;
-  z-index: -1;
-  opacity: 0.5;
-  animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+  z-index: -0.5;
+  opacity: 0.6;
+  animation: cloudAnimation 3.3s infinite alternate ease-in-out;
 }
 
 @keyframes cloudAnimation {
   from {
-    transform: translate(10%, -10%);
+    transform: translate(10%, -9%);
   }
   to {
     transform: translate(0%, 0%);
@@ -179,6 +219,7 @@ nav ul {
 
 .Projects-head h3 {
   padding: 1rem;
+  text-transform: none;
 }
 
 .cards {
@@ -212,7 +253,7 @@ nav ul {
 
 #Contact {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
     url("/images/rocks.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -223,14 +264,14 @@ nav ul {
 
 .form-wrapper {
   background: rgba(19, 28, 39, 0.8);
-  width: 60%;
+  width: 50%;
   color: white;
   border-radius: 20px;
 }
 
 .form-head {
   text-align: center;
-  padding: 4rem;
+  padding: 5rem;
 }
 
 .name-form,
@@ -241,11 +282,12 @@ nav ul {
 
 .form-wrapper label {
   margin: 0rem 3rem;
+  text-transform: none;
 }
 
 .form-wrapper button {
-  width: 50%;
-  padding: 2rem;
+  width: 40%;
+  padding: 2rem 2rem;
   margin-top: 8rem;
 }
 
@@ -270,6 +312,7 @@ footer {
 
 footer h5 {
   flex: 1 1 40rem;
+  font-size: 8px;
 }
 
 footer ul {
@@ -288,6 +331,7 @@ footer ul {
   nav {
     text-align: center;
   }
+
   #Logo {
     padding: 2rem;
   }
@@ -295,19 +339,20 @@ footer ul {
     height: 40rem;
   }
   .moving-cloud-1 {
-    z-index: -1;
+    z-index: 1;
   }
   .moving-cloud-2 {
-    z-index: -2;
+    z-index: -0.5;
+    top: 10%;
+    opacity: 0.7;
   }
   .form-wrapper {
     width: 100%;
   }
-  footer {
-    text-align: center;
-  }
-  footer h5 {
-    padding-bottom: 3rem;
+  .footer-wrapper h5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
