@@ -60,6 +60,9 @@ button:hover {
 .main-head {
   background-color: rgb(241, 224, 227);
   color: black;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 
 .user-id {
@@ -280,19 +283,41 @@ nav ul {
   text-align: center;
 }
 
+.message-form {
+  padding: 3rem;
+  text-align: center;
+}
+
 .form-wrapper label {
   margin: 0rem 3rem;
   text-transform: none;
 }
 
 .form-wrapper button {
-  width: 40%;
+  width: 20%;
   padding: 2rem 2rem;
-  margin-top: 8rem;
+  margin: auto;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .form-wrapper input {
   padding: 1rem 3rem;
+  font-family: "Philosopher", sans-serif;
+}
+
+.form-wrapper .message-form input {
+  height: 80px;
+}
+
+.form-wrapper .message-form label {
+  margin-left: 1rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 footer {
@@ -312,7 +337,11 @@ footer {
 
 footer h5 {
   flex: 1 1 40rem;
-  font-size: 8px;
+  font-size: 2rem;
+}
+
+footer h5 a {
+  font-size: 2rem;
 }
 
 footer ul {
@@ -321,6 +350,12 @@ footer ul {
   flex: 1 1 40rem;
   justify-content: space-between;
   align-items: center;
+}
+
+button:focus {
+  background: rgb(107, 97, 99);
+  outline-style: dotted;
+  outline-color: white;
 }
 
 /* Media Query */
@@ -357,10 +392,10 @@ footer ul {
 }
 
 .fa-brands.fa-linkedin {
-  font-size: 20px;
+  font-size: 2rem;
   color: black;
 }
 .fa-solid .fa-envelope {
-  font-size: 20px;
+  font-size: 2rem;
   color: black;
 }

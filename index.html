@@ -26,83 +26,90 @@
       </ul>
     </nav>
   </header>
-  <section class="hero">
-    <h2>Victoria Ruiz</h2>
-    <p> 👋 Hi, I’m Victoria
-      👀 I’m interested in learning how to code.
-      🌱 I’m looking to collaborate on projects.
-      📫 You can reach me at v-ruiz@outlook.com.
-    </p>
-    <p>
-      I have a Bachelor of Business Administration from <a target="_blank" href="https://twu.edu/">Texas Woman's
-        University</a>.
-      My recent interest in software development derives from the desire to create, learn, and explore tech.
-    </p>
-    <button><a class="button" href="#Contact">Get In Touch!</a></button>
-  </section>
-  <section id="Skills">
-    <header class="Skills-head">
-      <h2>Skills & Tools</h2>
-      <h3>A list of skills and tools I use to bring ideas to life!</h3>
-      <ul>
-        <li>CSS <i class="fa-brands fa-css3-alt"></i></li>
-        <li>JavaScript <i class="fa-brands fa-square-js"></i></li>
-        <li>Angular <i class="fa-brands fa-angular"></i></li>
-        <li>HTML <i class="fa-brands fa-html5"></i></li>
-        <li>VS Code <i class="fa-solid fa-code"></i></li>
-        <li>Responsive Websites <i class="fa-solid fa-desktop"></i></li>
-      </ul>
-      <img src="/images/cloud.png" class="moving-cloud-1 cloud" />
-      <img src="/images/cloud.png" class="moving-cloud-2 cloud" />
-    </header>
-  </section>
-  <section id="Projects">
-    <header class="Projects-head">
-      <h2>Projects</h2>
-      <h3> Explore some of the projects I've worked on!</h3>
-    </header>
-    <div class="cards">
-      <div class="card">
-        <div class="card-icon">
-          <img src="/images/mountainicon.ico" alt="">
+  <main>
+    <section id="About">
+      <section class="hero">
+        <h2>Victoria Ruiz</h2>
+        <p> 👋 Hi, I’m Victoria
+          👀 I’m interested in learning how to code.
+          🌱 I’m looking to collaborate on projects.
+        </p>
+        <p>
+          I have a Bachelor of Business Administration from <a target="_blank" href="https://twu.edu/">Texas Woman's
+            University</a>.
+          My recent interest in software development derives from the desire to create, learn, and explore tech.
+        </p>
+        <button><a class="button" href="#Contact">Get In Touch!</a></button>
+      </section>
+    </section>
+    <section id="Skills">
+      <header class="Skills-head">
+        <h2>Skills & Tools</h2>
+        <h3>A list of skills and tools I use to bring ideas to life!</h3>
+        <ul>
+          <li>CSS <i class="fa-brands fa-css3-alt"></i></li>
+          <li>JavaScript <i class="fa-brands fa-square-js"></i></li>
+          <li>Angular <i class="fa-brands fa-angular"></i></li>
+          <li>HTML <i class="fa-brands fa-html5"></i></li>
+          <li>VS Code <i class="fa-solid fa-code"></i></li>
+          <li>Responsive Websites <i class="fa-solid fa-desktop"></i></li>
+        </ul>
+        <img src="/images/cloud.png" class="moving-cloud-1 cloud" />
+        <img src="/images/cloud.png" class="moving-cloud-2 cloud" />
+      </header>
+    </section>
+    <section id="Projects">
+      <header class="Projects-head">
+        <h2>Projects</h2>
+        <h3> Explore some of the projects I've worked on!</h3>
+      </header>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">
+            <img src="/images/mountainicon.ico" alt="">
+          </div>
+          <h4><a href="index.html">Home</a></h4>
+          <p>Portfolio</p>
         </div>
-        <h4><a href="index.html">Home</a></h4>
-        <p>Portfolio</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">
-          <img src="/images/petal.ico" alt="">
+        <div class="card">
+          <div class="card-icon">
+            <img src="/images/petal.ico" alt="">
+          </div>
+          <h4><a target="_blank" href="http://www.meadowmadetx.com">Meadow Made</a></h4>
+          <p>E-commerce site for handcrafted soaps.</p>
         </div>
-        <h4>Meadow Made</h4>
-        <p>E-commerce site for handcrafted soaps.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">
-          <img src="/images/computer.ico" alt="">
+        <div class="card">
+          <div class="card-icon">
+            <img src="/images/computer.ico" alt="">
+          </div>
+          <h4>Other</h4>
+          <p>More projects to come.</p>
         </div>
-        <h4>Other</h4>
-        <p>More projects to come.</p>
       </div>
-    </div>
-  </section>
-  <section id="Contact">
-    <div class="form-wrapper">
-      <header class="form-head">
-        <h2>Let's Connect!</h2>
-        <form>
+    </section>
+    <section id="Contact">
+      <div class="form-wrapper">
+        <header class="form-head">
+          <h2>Let's Connect!</h2>
+        </header>
+        <form target="_blank" action="https://formspree.io/f/mjvdvdde" method="POST">
           <div class="name-form">
             <label for="name">Name:</label>
             <input type="text" name="name" required>
           </div>
           <div class="email-form">
             <label for="email">Email:</label>
-            <input type="email" name="email" required>
+            <input type="email" name="email" required name="_replyto">
           </div>
-          <button type="submit">Submit</button>
+          <div class="message-form">
+            <label for="message">Message:</label>
+            <input type="text" name="message">
+          </div>
+          <button value="Send" type="submit">Submit</button>
         </form>
-      </header>
-    </div>
-  </section>
+      </div>
+    </section>
+  </main>
   <footer>
     <div class="footer-wrapper">
       <h5><a href="index.html">Victoria Ruiz &copy;</a></h5>
